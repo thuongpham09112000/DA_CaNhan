@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <title>Responsive Food Delivery</title>
+</head>
+
+<body>
+    <!-- sidebar -->
+    <div class="sidebar">
+
+        <h1 class="logo">FoodTime</h1>
+
+        <div class="sidebar-menus">
+            <a href="#"><ion-icon name="storefront-outline"></ion-icon>Trang chủ</a>
+            <a href="#"><ion-icon name="receipt-outline"></ion-icon>Hóa đơn</a>
+            <a href="#"><ion-icon name="wallet-outline"></ion-icon>Giỏ hàng</a>
+            <a href="#"><ion-icon name="notifications-outline"></ion-icon>Thông báo</a>
+            <a href="#"><ion-icon name="chatbubbles-outline"></ion-icon>Liên hệ</a>
+            <a href="#"><ion-icon name="settings-outline"></ion-icon>Cài đặt</a>
+        </div>
+
+        <div class="sidebar-logout">
+            <a href="#"><ion-icon name="log-out-outline"></ion-icon>Đăng xuất</a>
+        </div>
+    </div>
+
+    <!-- main -->
+    <div class="main">
+
+        <!-- main-navbar -->
+        <div class="main-navbar">
+
+            <ion-icon class="menu-toggle" name="menu-outline"></ion-icon>
+
+            <div class="search">
+                <input type="text" placeholder="Bạn muốn ăn gì?">
+                <button class="search-btn">Tìm kiếm</button>
+            </div>
+
+            <div class="profile">
+                <a href="#" class="cart"><ion-icon name="cart-outline"></ion-icon></a>
+                <a href="#" class="user"><ion-icon name="person-outline"></ion-icon></a>
+            </div>
+        </div>
+
+        <!-- main-highlight -->
+        <div class="main-highlight">
+
+            <!-- title section and arro -->
+            <div class="main-header">
+                <h2 class="main-title">Món ăn được đề xuất</h2>
+                <div class="main-arrow">
+                    <ion-icon class="back" name="chevron-back-circle-outline"></ion-icon>
+                    <ion-icon class="next" name="chevron-forward-circle-outline"></ion-icon>
+                </div>
+            </div>
+
+            <!-- highlight menu -->
+            <div class="highlight-wrapper">
+                <div class="highlight-card">
+                    <img class="highlight-img" src="images/salad.jpg">
+                    <div class="highlight-desc">
+                        <h4>Salad</h4>
+                        <p>60.000đ</p>
+                    </div>
+                </div>
+                <div class="highlight-card">
+                    <img class="highlight-img" src="images/coffee.jpg">
+                    <div class="highlight-desc">
+                        <h4>Coffee</h4>
+                        <p>50.000đ</p>
+                    </div>
+                </div>
+                <div class="highlight-card">
+                    <img class="highlight-img" src="images/steak.jpg">
+                    <div class="highlight-desc">
+                        <h4>Premium Steak</h4>
+                        <p>250.000đ</p>
+                    </div>
+                </div>
+                <div class="highlight-card">
+                    <img class="highlight-img" src="images/burger.jpg">
+                    <div class="highlight-desc">
+                        <h4>Big Burger</h4>
+                        <p>100.000đ</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- main menu / oder -->
+        <div class="main-menus">
+            <!-- filte section -->
+            <div class="main-filter">
+
+                <div>
+                    <h2 class="main-title">Danh mục <br>Thực đơn</h2>
+                    <div class="main-arrow">
+                        <ion-icon class="back-menus" name="chevron-back-circle-outline"></ion-icon>
+                        <ion-icon class="next-menus" name="chevron-forward-circle-outline"></ion-icon>
+                    </div>
+                </div>
+
+                <div class="filter-wrapper">
+                    <div class="filter-card">
+                        <div class="filter-icon">
+                            <ion-icon name="restaurant-outline"></ion-icon>
+                        </div>
+                        <p>Tất cả</p>
+                    </div>
+
+                    <div class="filter-card">
+                        <div class="filter-icon">
+                            <ion-icon name="fast-food-outline"></ion-icon>
+                        </div>
+                        <p>Bánh Burger</p>
+                    </div>
+
+                    <div class="filter-card">
+                        <div class="filter-icon">
+                            <ion-icon name="pizza-outline"></ion-icon>
+                        </div>
+                        <p>Bánh Pizza</p>
+                    </div>
+
+                    <div class="filter-card">
+                        <div class="filter-icon">
+                            <ion-icon name="Wine-outline"></ion-icon>
+                        </div>
+                        <p>Rượu vang</p>
+                    </div>
+
+                    <div class="filter-card">
+                        <div class="filter-icon">
+                            <ion-icon name="ice-cream-outline"></ion-icon>
+                        </div>
+                        <p>Kem</p>
+                    </div>
+
+                    <div class="filter-card">
+                        <div class="filter-icon">
+                            <ion-icon name="cafe-outline"></ion-icon>
+                        </div>
+                        <p>Cà phê</p>
+                    </div>
+
+                    <div class="filter-card">
+                        <div class="filter-icon">
+                            <ion-icon name="restaurant-outline"></ion-icon>
+                        </div>
+                        <p>Hải sản</p>
+                    </div>
+
+                    <div class="filter-card">
+                        <div class="filter-icon">
+                            <ion-icon name="fish-outline"></ion-icon>
+                        </div>
+                        <p>Đồ ăn Healthy</p>
+                    </div>
+                </div>
+
+            </div>
+            <hr class="divider">
+
+            <!-- list of food menus -->
+            <div class="main-detail">
+                <h2 class="main-title">Chọn món</h2>
+                <div class="detail-wrapper">
+
+                    <div class="detail-card">
+                        <img class="detail-img" src="images/seafood.jpg">
+                        <div class="detail-desc">
+                            <div class="detail-name">
+                                <h4>Shrimp Soup</h4>
+                                <p class="detail-sub">Lorem ipsum dolor sit amet consectetur provident doloremque minima
+                                </p>
+                                <p class="price">152.000đ</p>
+                            </div>
+                            <ion-icon class="detail-favorites" name="bookmark-outline"></ion-icon>
+                        </div>
+                    </div>
+
+                    <div class="detail-card">
+                        <img class="detail-img" src="images/pizza.jpg">
+                        <div class="detail-desc">
+                            <div class="detail-name">
+                                <h4>Pizza</h4>
+                                <p class="detail-sub">Lorem ipsum dolor sit amet consectetur provident doloremque minima
+                                </p>
+                                <p class="price">252.000đ</p>
+                            </div>
+                            <ion-icon class="detail-favorites" name="bookmark-outline"></ion-icon>
+                        </div>
+                    </div>
+
+                    <div class="detail-card">
+                        <img class="detail-img" src="images/wine.jpg">
+                        <div class="detail-desc">
+                            <div class="detail-name">
+                                <h4>Rượu vang</h4>
+                                <p class="detail-sub">Illum officia porro amet consectetur adipisicing facilis eum
+                                    eveniet</p>
+                                <p class="price">1.590.000đ</p>
+                            </div>
+                            <ion-icon class="detail-favorites" name="bookmark-outline"></ion-icon>
+                        </div>
+                    </div>
+
+                    <div class="detail-card">
+                        <img class="detail-img" src="images/burger.jpg">
+                        <div class="detail-desc">
+                            <div class="detail-name">
+                                <h4>Big Burger thịt bò</h4>
+                                <p class="detail-sub">Temporibus at praesentium nisi cumque consectetur dolorem</p>
+                                <p class="price">235.00đ</p>
+                            </div>
+                            <ion-icon class="detail-favorites" name="bookmark-outline"></ion-icon>
+                        </div>
+                    </div>
+
+                    <div class="detail-card">
+                        <img class="detail-img" src="images/coffee.jpg">
+                        <div class="detail-desc">
+                            <div class="detail-name">
+                                <h4>Cafe Latte</h4>
+                                <p class="detail-sub">Minus ipsa fugiat non at expedita incidunt provident doloremque
+                                    architecto</p>
+                                <p class="price">40.00đ</p>
+                            </div>
+                            <ion-icon class="detail-favorites" name="bookmark-outline"></ion-icon>
+                        </div>
+                    </div>
+
+                    <div class="detail-card">
+                        <img class="detail-img" src="images/salad.jpg">
+                        <div class="detail-desc">
+                            <div class="detail-name">
+                                <h4>Salad Da Cá Hồi</h4>
+                                <p class="detail-sub">Corporis accusamus harum alias hic labore officiis natus</p>
+                                <p class="price">45.000đ</p>
+                            </div>
+                            <ion-icon class="detail-favorites" name="bookmark-outline"></ion-icon>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</html>
